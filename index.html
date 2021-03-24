@@ -20,13 +20,15 @@
     <title>Profile card component</title>
 
     <style>
-      * {
-        border: solid 1px red;
-      }
-
       body {
         font-size: 18px;
         font-family: "Kumbh Sans", sans-serif;
+        background: url("./images/bg-pattern-top.svg"),
+          url("./images/bg-pattern-bottom.svg");
+        background-position: left top -45vh, right bottom -80vh;
+        background-repeat: no-repeat, no-repeat;
+        background-color: hsl(185, 75%, 39%);
+        background-size: 50%, 50%;
         color: hsl(229, 23%, 23%);
       }
 
@@ -34,11 +36,17 @@
         width: 250px;
         margin: auto;
         margin-top: 20rem;
+        border-radius: 15px;
+        border: solid 1px hsl(0, 0%, 59%);
+        background: white;
       }
 
       .card-header {
         position: relative;
         height: 100px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background: url("./images/bg-pattern-card.svg");
       }
 
       .card-header .avatar {
@@ -47,16 +55,30 @@
         width: 96px;
         bottom: -48px;
         left: 77px;
+        border-radius: 50%;
+        border: solid 5px white;
+        background: url("./images/image-victor.jpg");
       }
 
       .card-body {
         padding: 70px 20px 30px 20px;
         text-align: center;
+        border-bottom: solid 1px hsl(0, 0%, 59%);
+      }
+
+      .card-body .name {
+        font-weight: bold;
+      }
+
+      .card-body .age {
+        color: hsl(227, 10%, 46%);
       }
 
       .card-body .city {
         display: block;
         margin-top: 15px;
+        font-size: 0.9em;
+        color: hsl(227, 10%, 46%);
       }
 
       .card-footer {
@@ -68,6 +90,15 @@
       .mention {
         text-align: center;
         margin: 5px;
+      }
+
+      .mention .mention-count {
+        font-weight: bold;
+      }
+
+      .mention .mention-label {
+        font-size: 0.6em;
+        color: hsl(227, 10%, 46%);
       }
     </style>
   </head>

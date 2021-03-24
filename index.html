@@ -20,10 +20,54 @@
     <title>Profile card component</title>
 
     <style>
+      * {
+        border: solid 1px red;
+      }
+
       body {
         font-size: 18px;
         font-family: "Kumbh Sans", sans-serif;
         color: hsl(229, 23%, 23%);
+      }
+
+      .card {
+        width: 250px;
+        margin: auto;
+        margin-top: 20rem;
+      }
+
+      .card-header {
+        position: relative;
+        height: 100px;
+      }
+
+      .card-header .avatar {
+        position: absolute;
+        height: 96px;
+        width: 96px;
+        bottom: -48px;
+        left: 77px;
+      }
+
+      .card-body {
+        padding: 70px 20px 30px 20px;
+        text-align: center;
+      }
+
+      .card-body .city {
+        display: block;
+        margin-top: 15px;
+      }
+
+      .card-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 20px;
+      }
+
+      .mention {
+        text-align: center;
+        margin: 5px;
       }
     </style>
   </head>

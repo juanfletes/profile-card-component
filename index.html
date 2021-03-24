@@ -23,19 +23,36 @@
       body {
         font-size: 18px;
         font-family: "Kumbh Sans", sans-serif;
-        background: url("./images/bg-pattern-top.svg"),
-          url("./images/bg-pattern-bottom.svg");
-        background-position: left top -45vh, right bottom -80vh;
-        background-repeat: no-repeat, no-repeat;
         background-color: hsl(185, 75%, 39%);
-        background-size: 50%, 50%;
         color: hsl(229, 23%, 23%);
+      }
+
+      @media (max-width: 1440px) {
+        body {       
+          background: url("./images/bg-pattern-top.svg"),
+            url("./images/bg-pattern-bottom.svg");
+          background-position: left top -45vh, right bottom -80vh;
+          background-repeat: no-repeat, no-repeat;
+          background-size: 50%, 50%;
+          background-color: hsl(185, 75%, 39%);
+        }
+      }
+
+      @media (max-width: 375px) {
+        body {       
+          background: url("./images/bg-pattern-top.svg"),
+            url("./images/bg-pattern-bottom.svg");
+          background-position: left -20vh top -30vh, right -31vh bottom -30vh;
+          background-repeat: no-repeat, no-repeat;
+          background-size: 100%, 100%;
+          background-color: hsl(185, 75%, 39%);
+        }
       }
 
       .card {
         width: 250px;
         margin: auto;
-        margin-top: 20rem;
+        margin-top: 20vh;
         border-radius: 15px;
         border: solid 1px hsl(0, 0%, 59%);
         background: white;
